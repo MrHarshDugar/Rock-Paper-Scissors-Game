@@ -9,26 +9,45 @@ body {
     background-size: cover;
 }
 
-.navbar {
+/* .navbar {
     color: white;
     background-color: black;
     height: 50px;
     margin-top: 20px;
-    /* font-style: ; */
 }
-
 h1 {
     margin-top: -17px
-}
+} */
+
 .scoreBoard {
     display: flex;
-    flex-direction: row;
-    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    gap: 75px;
     font-size: 25px;
 }
+#you, #comp {
+    display: flex;
+    flex-direction: column;   /* stack score and label vertically */
+    align-items: center;      /* center them horizontally */
+}
+
 #youScore, #compScore {
     font-size: 55px;
-    /* font-weight: 550; */
+    margin-top: 5rem;
+}
+p {
+    margin: 0;
+}
+
+.msgContainer {
+    font-size: 25px;
+    margin-top: 45px;
+    background-color: pink;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .options {
@@ -79,8 +98,12 @@ h1 {
 
 #newGame {
     position: fixed;
-    bottom: 28px;
+    bottom: 25px;
     cursor: pointer;
+    background-color: black;
+    color: pink;
+    padding: 7px;
+    border-radius: 10px;
 }
 #newGame:hover {
     box-shadow: 5px 5px 5px white;
